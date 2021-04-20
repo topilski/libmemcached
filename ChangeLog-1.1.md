@@ -67,10 +67,6 @@ the full list of changes since the last 1.0 release.
 
 > released 2020-12-21
 
-**NOTE:**  
-This is a bug fix release, not a feature release. The minor version number
-was incremented due to the following changes:
-
 * Ported build system to CMake.
 * Ported test suite to Catch2.
 * Build requires C++11 compiler support.
