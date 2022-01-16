@@ -23,7 +23,7 @@
 #include "common/options.hpp"
 #include "common/checks.hpp"
 
-static memcached_return_t print(const memcached_st *, const char *k, size_t l, void *ctx) {
+static memcached_return_t print(const memcached_st *, const char *k, size_t l, time_t exp, void *ctx) {
   auto out = static_cast<std::ostream *>(ctx);
   out->write(k, l);
   out->put('\n');
